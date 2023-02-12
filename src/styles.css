@@ -50,6 +50,7 @@ main{
    margin-bottom: 2.8rem;
    display: flex;
    justify-content: center;
+   padding: 0 1.2rem;
 }
 
 .box__letter img{
@@ -66,7 +67,6 @@ main{
 
  .box__title{
     font-size: var(--font-size-title);
-
  }
 
  .box__response{
@@ -92,7 +92,7 @@ main{
 
 
 .box__icon span{
-    font-size: 25px;
+    font-size: 17px;
 }
 
 .box__icon::before{
@@ -205,6 +205,9 @@ main{
 
 
 @media (min-width: 700px) {
+  .box__icon span{
+    font-size: 25px;
+}
   .box__letter img{
     max-width: 500px;
  }
