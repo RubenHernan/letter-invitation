@@ -141,7 +141,8 @@ main{
 }
 
 .form__select{
-  width: 30%;
+
+  width: 170px;
   background-image: url("./img/arrow.png");
   background-repeat: no-repeat;
   background-position: right 1.2em top 50%;
@@ -205,6 +206,9 @@ main{
 
 
 @media (min-width: 700px) {
+  .form__select{
+    width: 30%;
+  }
   .box__icon span{
     font-size: 25px;
 }
