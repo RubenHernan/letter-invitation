@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invite</title>
+
+<link rel="stylesheet" href="./src/styles.css">
+</head>
+<body>
+    <main>
+        <div class="box__letter">
+            <img src="./src/img/letter.png" alt="letter-info">
+        </div>
+        <div class="box_content"> 
+        <div class="box__info">
+            <span class="box__title">KINDLY RSVP BELOW BY 30 JUNE 2022</span>
+            <div class="box__response">
+                <label class="box__icon1 box__icon">
+                     <input id="accept" type="radio" name="responde" class="response__input" value="accept">
+                    <span>JOYFULLY ACCEPT</span>
+                </label>
+                <label class="box__icon2 box__icon">
+                    <input id="decline" type="radio" name="responde" class="response__input" value="decline">
+                    <span>REGRETFULLY DECLINE</span>
+                </label>
+            </div>
+        </div>
+        <form class="form__container">
+        
+            <div class="form__number">
+                <span class="form__title">NUMBER OF GUESTS:
+                </span>
+             
+                    <select class="form__select" name="" id="">
+                        <option value="">Select</option>
+                        <option value="">0 (Not attending)</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                    </select>
+             
+            </div>
+            <div class="form__guest">
+        
+                <div class="form__input">
+                    <span class="form__title">NAME(S) OF GUESTS:
+                    </span>
+                    <p>Kindly enter the names for the seating plan.</p>
+                    <input type="text" placeholder="Name(s)">
+                </div>
+                <div class="form__input">
+                    <span class="form__title">DIETARY REQUIREMENTS:</span>
+                    <input type="text" placeholder="e.g. Allergies">
+                </div>
+                <div class="form__input">
+                    <span class="form__title">CONTACT INFO:</span>
+                    <div class="box__contact">
+                        <input type="text" placeholder="Name">
+                        <input type="tel" placeholder="Phone">
+                        <input type="email" placeholder="Email">
+                    </div>
+                </div>
+                <div class="form__btn">
+                    <button class="btn">REPLY NOW</button>
+                </div>
+            </div>
+        </form>
+    </div>
+    </main>
+
+    <script type="text/javascript">
+   
+        let label1 = document.querySelector(".box__icon1")
+        let label2 = document.querySelector(".box__icon2")
+        let radios = document.querySelectorAll(".response__input")
+
+radios.forEach((elemento) => {
+ elemento.addEventListener("change", () => {
+   if(elemento.value === "accept") {
+        label1.classList.add("active");
+        label2.classList.remove("active")
+   }else{
+    label2.classList.add("active");
+        label1.classList.remove("active")
+   }
+
+ })
+})
+    </script>
+</body>
+</html>
