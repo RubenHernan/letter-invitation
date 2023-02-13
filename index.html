@@ -17,14 +17,18 @@
         <div class="box__info">
             <span class="box__title">KINDLY RSVP BELOW BY 30 JUNE 2022</span>
             <div class="box__response">
-                <label class="box__icon1 box__icon">
-                     <input id="accept" type="radio" name="responde" class="response__input" value="accept">
-                    <span>JOYFULLY ACCEPT</span>
-                </label>
-                <label class="box__icon2 box__icon">
+                <div>
+                    <input id="accept" type="radio" name="responde" class="response__input" value="accept">
+                    <label for="accept" class="box__icon">
+                        <span>JOYFULLY ACCEPT</span>
+                    </label>
+            </div>
+            <div>
                     <input id="decline" type="radio" name="responde" class="response__input" value="decline">
-                    <span>REGRETFULLY DECLINE</span>
-                </label>
+                    <label for="decline" class="box__icon">
+                        <span>REGRETFULLY DECLINE</span>
+                    </label>
+            </div>
             </div>
         </div>
         <form class="form__container">
@@ -72,7 +76,7 @@
     </div>
     </main>
 
-    <script type="text/javascript">
+    <!-- <script type="text/javascript">
    
         let label1 = document.querySelector(".box__icon1")
         let label2 = document.querySelector(".box__icon2")
@@ -90,6 +94,6 @@ radios.forEach((elemento) => {
 
  })
 })
-    </script>
+    </script> -->
 </body>
 </html>

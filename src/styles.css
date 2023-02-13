@@ -104,21 +104,19 @@ main{
   background-size: auto 200%;
 }
 
-.active{
+.response__input:checked + .box__icon {
   opacity: 1;
+ 
 }
 
-.box__icon.active::before{
-  background-position: 50% 100%
+.response__input:checked + .box__icon::before {
+  background-position: 50% 100%;
+ 
 }
 
 
 .response__input{
   display: none;
-}
-
-.img__heart--dark{
-  background-position: 50% 100%
 }
 
 .form__container{
