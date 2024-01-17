@@ -1,3 +1,7 @@
+<?php
+ include("app/result_register.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,6 +18,7 @@
             <img src="./src/img/letter.png" alt="letter-info">
         </div>
         <div class="box_content"> 
+        <form class="form__container" method="post">
         <div class="box__info">
             <span class="box__title">KINDLY RSVP BELOW BY 30 JUNE 2022</span>
             <div class="box__response">
@@ -31,20 +36,20 @@
             </div>
             </div>
         </div>
-        <form class="form__container">
+       
         
             <div class="form__number">
                 <span class="form__title">NUMBER OF GUESTS:
                 </span>
              
-                    <select class="form__select" name="" id="">
+                    <select class="form__select" name="number_of_guests" id="" required>
                         <option value="">Select</option>
-                        <option value="">0 (Not attending)</option>
-                        <option value="">1</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
-                        <option value="">4</option>
-                        <option value="">5</option>
+                        <option value="0">0 (Not attending)</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
                     </select>
              
             </div>
@@ -54,46 +59,26 @@
                     <span class="form__title">NAME(S) OF GUESTS:
                     </span>
                     <p>Kindly enter the names for the seating plan.</p>
-                    <input type="text" placeholder="Name(s)">
+                    <input type="text" placeholder="Name(s)" name="guest_names">
                 </div>
                 <div class="form__input">
                     <span class="form__title">DIETARY REQUIREMENTS:</span>
-                    <input type="text" placeholder="e.g. Allergies">
+                    <input type="text" placeholder="e.g. Allergies" name="dietary_requirements">
                 </div>
                 <div class="form__input">
                     <span class="form__title">CONTACT INFO:</span>
                     <div class="box__contact">
-                        <input type="text" placeholder="Name">
-                        <input type="tel" placeholder="Phone">
-                        <input type="email" placeholder="Email">
+                        <input type="text" placeholder="Name" name="contact_name" required>
+                        <input type="tel" placeholder="Phone" name="contact_phone" required>
+                        <input type="email" placeholder="Email" name="contact_email" required>
                     </div>
                 </div>
                 <div class="form__btn">
-                    <button class="btn">REPLY NOW</button>
+                    <button class="btn" name="register">REPLY NOW</button>
                 </div>
             </div>
         </form>
     </div>
     </main>
-
-    <!-- <script type="text/javascript">
-   
-        let label1 = document.querySelector(".box__icon1")
-        let label2 = document.querySelector(".box__icon2")
-        let radios = document.querySelectorAll(".response__input")
-
-radios.forEach((elemento) => {
- elemento.addEventListener("change", () => {
-   if(elemento.value === "accept") {
-        label1.classList.add("active");
-        label2.classList.remove("active")
-   }else{
-    label2.classList.add("active");
-        label1.classList.remove("active")
-   }
-
- })
-})
-    </script> -->
 </body>
 </html>

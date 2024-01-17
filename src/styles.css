@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
 
 :root{
+  --color-body: #f9f1f8;
   --color-text: #666;
-  --color-pink: #C88397;
+  --color-light: #dbdbdb;
+  --color-pink: #c88397;
+  --color-pink-dark: rgb(187, 65, 100);
+  --color-error: #be2c55;
   --font-size-title: 20px;
 }
 
@@ -15,9 +19,12 @@
     background-image: url("./img/background.jpg");
     margin: 0;
     background-size: cover;   
+    background-repeat: no-repeat;
+    background-position: center center;
     font-family: 'Forum', cursive;
     color: var(--color-text);
   }
+
   h1, h2, h3, p{
     margin-top: 0;
     margin-bottom: 0;
@@ -97,9 +104,9 @@ main{
 
 .box__icon::before{
   content: "";
-  width: 50px;
+  width: 70px;
   aspect-ratio: 1;
-  background-image: url("./img/heart.svg");
+  background-image: url("./img/hearth-2.svg");
   background-repeat: no-repeat;
   background-size: auto 200%;
 }
@@ -203,6 +210,31 @@ main{
 }
 
 
+.thk__box {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.thk__circle {
+  background-color: transparent;
+  width: 200px;
+  aspect-ratio: 1;
+  border-radius: 100%;
+  border: var(--color-pink) solid 2px;
+  position: absolute;
+  padding: 2rem 4rem;
+  z-index: 1;
+}
+
+.thk__img {
+  width: 300px;
+  z-index: 10;
+}
+
+
 @media (min-width: 700px) {
   .form__select{
     width: 30%;
@@ -213,4 +245,19 @@ main{
   .box__letter img{
     max-width: 500px;
  }
+}
+
+.hidden {
+  display: none;
+}
+
+
+@media (max-width: 500px) {
+  .thk__circle {
+    width: 50%;
+  }
+
+  .thk__img {
+    width: 80%;
+  }
 }

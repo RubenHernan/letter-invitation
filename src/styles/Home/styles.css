@@ -1,0 +1,185 @@
+.home__container {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  width: 100%;
+  min-height: 100vh;
+  justify-content: center;
+}
+
+.home__box {
+  background-color: var(--color-body);
+  flex-grow: 1;
+  padding: 2rem;
+  width: 100%;
+  max-width: 1200px;
+}
+.home__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--color-pink-dark);
+  margin: 1rem 0;
+  padding: 13px 0;
+  border-bottom: 1px var(--color-pink) solid;
+}
+
+.home__title h1 {
+  letter-spacing: 5px;
+  font-size: 24px;
+}
+
+.home__title i {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.home__logout {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.list__header {
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  border-top: 1px var(--color-light) solid;
+  border-right: 1px var(--color-light) solid;
+  border-left: 1px var(--color-light) solid;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+}
+
+.list__footer {
+  display: flex;
+  font-size: 14px;
+  padding: 1.4rem 0.7rem;
+  background-color: white;
+  border-bottom: 1px var(--color-light) solid;
+  border-right: 1px var(--color-light) solid;
+  border-left: 1px var(--color-light) solid;
+  border-bottom-right-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+}
+
+.list__boxes {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.list__box {
+  border-radius: 4px;
+  padding: 5px 10px;
+  display: flex;
+  gap: 0.4rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+}
+
+.list__box:nth-child(1) {
+  background-color: rgb(207, 241, 207);
+  border: 1px solid rgb(63, 123, 63);
+}
+
+.list__box:nth-child(1) i {
+  font-size: 16px;
+  color: rgb(33, 90, 33);
+}
+
+.list__box:nth-child(2) {
+  background-color: rgb(246, 204, 204);
+  border: 1px solid rgb(120, 55, 55);
+}
+
+.list__box:nth-child(2) i {
+  font-size: 16px;
+  color: rgb(92, 27, 27);
+}
+
+.list__box p {
+  padding-left: 0.2rem;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.list__item {
+  display: flex;
+  flex-direction: row-reverse;
+  font-size: 14px;
+  align-items: center;
+}
+
+.container__btn {
+  display: flex;
+  gap: 6px;
+}
+
+.list__export {
+  border-radius: 4px;
+  display: flex;
+  cursor: pointer;
+  font-size: 22px;
+  padding: 8px 10px;
+  color: white;
+}
+
+.btn__excel {
+  background-color: rgb(30, 159, 30);
+}
+
+.btn__pdf {
+  background-color: rgb(180, 24, 63);
+}
+
+.table__box {
+  border: 1px var(--color-light) solid;
+  border-collapse: collapse;
+  font-size: 14px;
+  background-color: white;
+  width: 100%;
+}
+
+.table__header {
+  background-color: var(--color-pink-dark);
+  color: white;
+}
+
+.table__header th {
+  text-align: center;
+  padding: 5px 1.5rem;
+}
+
+.table__tr:hover {
+  background-color: var(--color-light);
+}
+
+.table__td {
+  white-space: nowrap;
+  text-align: center;
+  padding: 0.6rem;
+  border-bottom: 1px var(--color-light) solid;
+}
+
+.table__td2 {
+  text-align: left;
+  padding: 0.6rem;
+  border-bottom: 1px var(--color-light) solid;
+}
+
+.box__accepted {
+  background: rgb(207, 241, 207);
+  min-width: 100px;
+  padding: 2px 8px;
+  border-radius: 1rem;
+  border: 1px rgb(63, 123, 63) solid;
+}
+
+.box__declined {
+  background: rgb(246, 204, 204);
+  min-width: 100px;
+  padding: 2px 8px;
+  border-radius: 1rem;
+  border: 1px rgb(120, 55, 55) solid;
+}
