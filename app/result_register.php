@@ -3,12 +3,6 @@ session_start();
 
 if (isset($_POST['register'])) {
 
-    if (!isset($_POST['responde'])) {
-        header("Location: {$_SERVER['PHP_SELF']}");
-        exit();
-    }
-
-
     $responseType = $_POST['responde'] === "accept" ? true : false;
     $numberOfGuests = $_POST['number_of_guests'];
     $guestNames = $_POST['guest_names'];
