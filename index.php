@@ -13,6 +13,7 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link rel="stylesheet" href="./src/styles.css">
 </head>
 <body>
@@ -21,7 +22,7 @@
             <div class="box__img animate__animated animate__pulse animate__infinite">
                 <img src="./src/img/elefante01.png" alt="letter-info">
             </div>
-            <div class="box__img animate__animated animate__fadeIn">
+            <div data-aos="fade-right" data-aos-once="true" data-aos-duration="2000" class="box__img animate__animated animate__fadeIn">
                 <img src="./src/img/elefante02.png" alt="letter-info">
             </div>
         </div>
@@ -97,5 +98,6 @@
         }
     </script>
     <script src="./src/main.js" defer></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
 </html>

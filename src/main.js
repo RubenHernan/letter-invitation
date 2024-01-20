@@ -1,3 +1,4 @@
+AOS.init();
 function validateForm() {
     const responseInputs = document.querySelectorAll('.response__input');
     let responseSelected = false;

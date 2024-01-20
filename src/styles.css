@@ -54,23 +54,24 @@ button {
 
 main {
   margin: 0 auto;
-  padding: 1rem;
   max-width: 780px;
 }
 
 .box__letter {
-  margin-top: 1.2rem;
-  margin-bottom: 2.8rem;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  gap: 2rem;
-  padding: 0 1.2rem;
+}
+
+.box__img{
+  padding: 2rem 2rem 0 2rem;
+  height: 500px;
 }
 
 .box__letter img {
-  max-height: 500px;
+  object-fit: contain;
+  height: 100%;
 }
 
 .box_content {
@@ -243,9 +244,6 @@ main {
   .box__icon span {
     font-size: 25px;
   }
-  .box__letter img {
-    max-width: 500px;
-  }
 }
 
 .hidden {
@@ -259,5 +257,9 @@ main {
 
   .thk__img {
     width: 80%;
+  }
+
+  .box__img{
+    height: 50vh;
   }
 }
