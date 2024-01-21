@@ -44,3 +44,41 @@ function resetBorderBox() {
     const requiredBox = document.querySelector('.box__response');
     requiredBox.style.border = 'none';
 }
+
+window.onload = function() {
+    document.getElementById('customModal').style.display = 'block';
+}
+
+function playSong(){
+    document.getElementById("song").play();
+}
+
+function closeCustomModal() {
+    document.getElementById('customModal').style.display = 'none';
+}
+
+function acceptInvitation() {
+    document.getElementById("accept").checked = true;
+    const soundOn = document.getElementById("soundOn");
+    const soundOff = document.getElementById("soundOff");
+    soundOn.style.display = "inline-block";
+    soundOff.style.display = "none";
+    playSong();
+    closeCustomModal();
+}
+
+function toggleSound() {
+    const soundOn = document.getElementById("soundOn");
+    const soundOff = document.getElementById("soundOff");
+    const audio = document.getElementById("song");
+
+    if (audio.paused) {
+        audio.play();
+        soundOn.style.display = "inline-block";
+        soundOff.style.display = "none";
+    } else {
+        audio.pause();
+        soundOn.style.display = "none";
+        soundOff.style.display = "inline-block";
+    }
+}

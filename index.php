@@ -9,15 +9,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wedding Invite</title>
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 <link rel="stylesheet" href="./src/styles.css">
 </head>
 <body>
     <main>
+        <div class='box__sound'>
+            <img id='soundOn' src="./src/img/sound-on.png" alt="letter-info" style="display: none;" onclick="toggleSound()">
+            <img id='soundOff' src="./src/img/sound-off.png" alt="letter-info" onclick="toggleSound()">
+        </div>
         <div class="box__letter">
             <div class="box__img animate__animated animate__pulse animate__infinite">
                 <img src="./src/img/elefante01.png" alt="letter-info">
@@ -92,11 +93,14 @@
         <source src="./src/sound/song.mp3" type="audio/mpeg">
     </audio>
     </main>
-    <script>
-        function playSong(){
-            document.getElementById("song").play();
-        }
-    </script>
+    <div id="customModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeCustomModal()">&times;</span>
+            <h2>Bienvenido a nuestro evento</h2>
+            <p>¿Aceptas la invitación?</p>
+            <button class="btn-accept" onclick="acceptInvitation()">Aceptar</button>
+        </div>
+    </div>
     <script src="./src/main.js" defer></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </body>
